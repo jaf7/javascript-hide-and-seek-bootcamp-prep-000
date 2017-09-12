@@ -23,7 +23,7 @@ function deepestChild() {
   while ( currentNode.querySelector( 'div' ) ) {
     currentNode = currentNode.querySelector( 'div' );
   }
-  return currentNode.innerText;
+  return currentNode;
 }
 
 // could locate by length - 1 on a querySelectorAll NodeList
