@@ -3,13 +3,11 @@ function getFirstSelector( selector ) {
 }
 
 function nestedTarget() {
-  return document.querySelector('#nested .target');
+  return document.querySelector( '#nested .target' );
 }
 
-// Define a function increaseRankBy(n) that increases the ranks in all of the .ranked-lists by n. (You might need to make use of parseInt()
-
 function increaseRankBy( n ) {
-  let rankedLists = document.querySelectorAll('.ranked-list > li');
+  let rankedLists = document.querySelectorAll( '.ranked-list > li' );
 
   for ( let i = 0; i < rankedLists.length; i++ ) {
     rankedLists[i].innerHTML = parseInt( rankedLists[i].innerHTML ) + n;
@@ -17,7 +15,15 @@ function increaseRankBy( n ) {
 
 }
 
+// Define a function deepestChild() that pulls out the most deeply nested child from div#grand-node. (Remember, you can iterate over elements and call querySelector() and querySelectorAll() on them.
 
 function deepestChild() {
+  let currentNode = document.getElementById( 'grand-node' );  
+  let next = [];
 
+  while ( currentNode.querySelector( 'div' ) ) {
+    
+  
 }
+
+// could locate by length - 1 on a querySelectorAll NodeList
